@@ -10,6 +10,7 @@ Ever wanted to show off your favorite animes in a fun and interactive way? That'
 
 Here's a sneak peek at what you'll see:
 
+https://grvsgh.github.io/Expanding-Cards/
 ![Anime Expanding Cards Preview](preview.gif)
 
 ## How to Use
@@ -34,8 +35,6 @@ If you're excited about this project and want to contribute, you're awesome! Fee
 - **Improve**: Add more animes, make the cards even cooler, or fix any bugs.
 - **Pull Request**: Share your changes and maybe they'll be added here!
 
-## Legal Stuff
 
-This project is shared under the [MIT License](LICENSE), which means you can use and modify it. Just be sure to give credit.
 
 That's it! Enjoy exploring my favorite animes with these nifty expanding cards. Have fun! 🚀
