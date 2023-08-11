@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+/* Resetting default box-sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Styling for the whole page */
+body {
+  font-family: "Muli", sans-serif; /* Using the imported font */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* 100% viewport height */
+  overflow: hidden; /* Preventing vertical scrollbar */
+  margin: 0; /* Removing default margin */
+}
+
+/* Styling for the expanding cards container */
+.container {
+  display: flex;
+  width: 90vw; /* 90% viewport width */
+}
+
+/* Styling for each individual expanding card */
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh; /* 80% viewport height */
+  border-radius: 50px; /* Rounded corners */
+  color: #fff; /* Text color */
+  cursor: pointer; /* Cursor style on hover */
+  flex: 0.5; /* Flex property for sizing */
+  margin: 10px; /* Margins between panels */
+  position: relative; /* Positioning for absolute elements */
+  transition: flex 0.7s ease-in; /* Smooth transition for flex property */
+}
+
+/* Styling for panel headings */
+.panel h3 {
+  font-size: 24px; /* Font size */
+  position: absolute; /* Absolute positioning */
+  bottom: 20px; /* Positioned from bottom */
+  left: 20px; /* Positioned from left */
+  margin: 0; /* Removing default margin */
+  opacity: 0; /* Initially hidden */
+}
+
+/* Styling for active panel (expanded) */
+.panel.active {
+  flex: 5; /* Expanding the active panel */
+}
+
+/* Styling for active panel heading */
+.panel.active h3 {
+  opacity: 1; /* Making the heading visible */
+  transition: opacity 0.3s ease-in 0.4s; /* Transition effect */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+  .container {
+    width: 100vw; /* Full viewport width */
+  }
+
+  /* Hiding some panels for better responsiveness */
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
